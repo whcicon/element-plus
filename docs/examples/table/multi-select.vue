@@ -33,6 +33,7 @@ interface User {
 const multipleTableRef = ref<InstanceType<typeof ElTable>>()
 const multipleSelection = ref<User[]>([])
 const toggleSelection = (rows?: User[]) => {
+  console.log(rows)
   if (rows) {
     rows.forEach((row) => {
       // TODO: improvement typing when refactor table
